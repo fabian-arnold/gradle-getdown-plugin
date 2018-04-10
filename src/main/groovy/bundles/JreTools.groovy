@@ -46,9 +46,9 @@ public class JreTools {
 
 	public static URL toOracleDownloadUrl(JreVersion jv, Platform platform) {
 		if (jv.update == 0) {
-			"http://download.oracle.com/otn-pub/java/jdk/${jv.minor}-b${String.format('%02d', jv.build)}/jre-${jv.minor}-${platform.durl}.tar.gz".toURL()
+			"http://download.oracle.com/otn-pub/java/jdk/${jv.minor}-b${String.format('%02d', jv.build)}/${jv.hash}/jre-${jv.minor}-${platform.durl}.tar.gz".toURL()
 		} else {
-			"http://download.oracle.com/otn-pub/java/jdk/${jv.minor}u${jv.update}-b${String.format('%02d', jv.build)}/jre-${jv.minor}u${jv.update}-${platform.durl}.tar.gz".toURL()
+			"http://download.oracle.com/otn-pub/java/jdk/${jv.minor}u${jv.update}-b${String.format('%02d', jv.build)}/${jv.hash}/jre-${jv.minor}u${jv.update}-${platform.durl}.tar.gz".toURL()
 		}
 	}
 

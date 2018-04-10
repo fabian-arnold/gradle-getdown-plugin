@@ -8,13 +8,15 @@ public class JreVersion implements java.io.Serializable{
 	public final int micro;
 	public final int update;
 	public final int build;
+	public final String hash;
 
-	public JreVersion(int major, int minor, int micro, int update, int build) {
+	public JreVersion(int major, int minor, int micro, int update, int build, String hash) {
 		this.major = major;
 		this.minor = minor;
 		this.micro = micro;
 		this.update = update;
 		this.build = build;
+		this.hash = hash;
 	}
 
 }
